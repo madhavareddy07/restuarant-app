@@ -1,0 +1,48 @@
+
+.spinner-container {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.tab-container {
+  overflow-y: auto;
+  box-shadow: 0 10px 10px -15px #111;
+  display: flex;
+}
+
+.each-tab-item {
+  list-style-type: none;
+  flex-shrink: 0;
+  flex-grow: 1;
+  padding: 15px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .each-tab-item {
+    margin: 0 5px;
+  }
+}
+
+.active-tab-item {
+  color: #ff6347;
+  border-bottom: 2px solid #ff6347;
+  font-weight: 600;
+}
+
+.tab-category-button {
+  color: inherit;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.dishes-list-container {
+  list-style: none;
+  padding: 0 25px 25px 25px;
+}
